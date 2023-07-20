@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "rootDir": "./lib",
+    "outDir": "./dist"
+  },
+  "include": [
+    "lib/**/*.ts"
+  ],
+  "exclude": [
+    "dist/**/*"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "mylib",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "exports": {
+    ".": "./dist/"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rm -rf ./dist",
+    "build": "tsc --project ./tsconfig.app.json",
+    "postinstall": "yarn build"
+  },
+  "dependencies": {
+    "log4js": "^6.9.1"
+  }
+}
